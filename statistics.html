@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html> 
+	<link rel="stylesheet" type="text/css" href="statisticsstylesheet.css">
+<head> 
+    <title> Statistics</title> 
+</head> 
+    <body>
+    	<h1> 
+    		<i> Statistics </i>
+        </h1>
+            <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html" style="font-family: Arial">Home</a></li>
+  <li><a href="stories.html" style="font-family: Arial">Stories</a></li>
+  <li><a href="statistics.html" style="font-family: Arial">Statistics</a></li>
+
+  <li class="dropdown" style="font-family: Arial">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Solutions</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="gettinginvolved.html">Getting Involved</a>
+      <a href="resources.html">Resources</a>
+    </div>
+  </li>
+  <li><a href="donations.html" style="font-family: Arial">Donations</a></li>
+
+</ul>
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    	<img src="graph.png" width="500" height="455" hspance="100"> 
+    	<img src="DrivingGraph.png" width="500" height="455" hspace="100"> 
+    	
+    	<p> Due to the increased chance of African Americans being stopped by the police while driving, many African Americans are taught or learn, through experince, about how to act "appropreiatley" while being stopped by a police officer. These measures are taken as a way for African Americans to increase their chances of getting home. The video, below, provides a great example of this.  
+    	</p>  
+
+    	<iframe width="500" height="415" 
+    	src="https://www.youtube.com/embed/ZpcxN9JsoN8" frameborder="0"
+    	allowfullscreen></iframe>
+
+    </body> 
+
+</html>

@@ -1,43 +1,112 @@
-<!DOCTYPE html> 
-<html lang="eng"> 
-	<head> 
-	  <meta charset= "utf-8/"> 
-	  <title> 
-	  Hello World 
-	  </title>  
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
-	  <style> 
-	  	body { 
-	  		  padding-top: 60px; 
-	  	} 
-	</style>
-	</head> 
-   <body> 
-   <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-      <a class="navbar-brand" href="#">Project name</a>
-      <ul class="nav navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-       
-      </ul>
-    </nav>
-	<div class="container">
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="indexstylesheet.css">
+	<head>
+		<title>TAUKBC</title>
+	</head>
+	<body>
+		<h1>Team Against Unjust Killings By Cops</h1>
+		<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+li {
+    float: left;
+}
 
-    </div><!-- /.container -->
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-    <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js">  
-    </script>  
-    <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/npm.js"> 
-    </script>  
-    <script text="text/javascript"> 
-      $('h1').html('hello gwc');
-      $('p').html('Stoked');
-    </script>
-   </body>
-</html> 
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html" style="font-family: Arial">Home</a></li>
+  <li><a href="stories.html" style="font-family: Arial">Stories</a></li>
+  <li><a href="statistics.html" style="font-family: Arial">Statistics</a></li>
+
+  <li class="dropdown" style="font-family: Arial">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Solutions</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="gettinginvolved.html">Getting Involved</a>
+      <a href="resources.html">Resources</a>
+    </div>
+  </li>
+  <li><a href="donations.html" style="font-family: Arial">Donations</a></li>
+
+</ul>
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+		<img src="http://www.trbimg.com/img-5507a1a7/turbine/ct-hands-up-dont-shoot-built-on-a-lie-20150316-001/650/650x366" style='height: 400px; width: 100%; object-fit: contain' title="When my hands are up, do not shoot!">
+		<h1>About Us</h2>
+		<p>Team Against Unjust Killings By Cops is an non-governmental organization that is trying to reach out to people about the matter of unjust killings of Black lives. Designed by a group of teenagers, this organization hopes to be able to pull in youth onto the site with it's teen-friendly environment. In order to speak to the people that aren't well-informed about this issue, not only will this organization bring facts, but will also rely on using emotions to relay messages. After learning about the movement, this organization makes it simple for viewers to learn more about how they can contribute to the cause, without being a Black person. Help save <b>Black</b> lives!</p>
+		<div id="arieyahn">
+		<img class="img-circle" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="Photo of Arieyahn" width="200px" height="200px" align="left"/> <p style="margin: 2cm;"><b><u>Arieyahn Murray</u></b> <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> 
+		</div>
+		<div id="tina">
+		<img class="img-circle" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="Photo of Tina" width="200px" height="200px" align="left"/> <p style="margin: 2cm;"><b><u>Tina Yu</u></b> <br />Tina is a 15 year old Chinese female. Tina's passion towards the Black Lives Movement started in late 2014. She was never really exposed to racism or prejudice because she grew up in an environment where she was never the odd one out. Her friends were always Asian and there were barely any other racial groups at her elementary and middle schools. Finally in 2014, she entered Oakland Technical High School and became exposed to many different racial groups. Oakland Technical High School was far away from her middle school so none of her friends were with her, forcing her to make new friends. Her first friend quickly became her best friend. Her friend was a Black female that had a lot of passion towards the Black Lives Matter movement. Quickly, Tina and her friend joined clubs and unions about social justice! When hanging out with her friend, she noticed how different it was from hanging out with her Chinese friends. People judged her for always hanging out alone with a Black girl. Astonished by what she learned, she decided to devote much of her time fighting for a movement that shouldn't even have to exist!</p> 
+		</div>
+		<div id="cymone">
+		<img class="img-circle" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" style="margin-left: 10cm" alt="Photo of Cymone" width="200px" height="200px" align="left"/> <p style="margin-left: 10cm;"><b><u>Cymone Rice</u></b> <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> 
+		</div>
+		<div id="itzell">
+		<img class="img-circle" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="Photo of Itzell" width="200px" height="200px" align="left"/> <p style="margin: 2cm;"><b><u>Itzell Quezada</u></b> <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> 
+		</div>
+	</body>
+</html>

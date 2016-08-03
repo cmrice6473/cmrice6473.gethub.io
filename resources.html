@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="resourcesstylesheet.css">
+<head>
+<title>Getting Involved</title>
+</head>
+    <body>
+
+    <h1>Resources</h1>
+        <style>
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.choices {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+<body>
+
+<ul class="links">
+  <li class="choices"><a class="active" href="index.html" style="font-family: Arial">Home</a></li>
+  <li class="choices"><a href="stories.html" style="font-family: Arial">Stories</a></li>
+  <li class="choices"><a href="statistics.html" style="font-family: Arial">Statistics</a></li>
+
+  <li class="choices" style="font-family: Arial">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Solutions</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="gettinginvolved.html">Getting Involved</a>
+      <a href="resources.html">Resources</a>
+    </div>
+  </li>
+  <li class="choices"><a href="donations.html" style="font-family: Arial">Donations</a></li>
+
+</ul>
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<p> Here is a list of other resources we have found useful. If any of the content you found on our site was of intrest to you, we highly encourage you to look further into the material below. </p>
+   
+<h1> Other Sites </h1>
+  <ul style="list-style-type: none">
+  <li> <a href="http://www.joincampaignzero.org/solutions/#solutionsoverview"><u>Campaign Zero</u></a> </li>
+  <p>Campaign Zero is a website that would also like to end police violence in America.  </p>
+  <li> <a href="https://mic.com/articles/121572/15-things-your-city-can-do-right-now-to-end-police-brutality#.b16l5dK04"> <u>Identities.Mic Article </u></a> </li>
+  <p>This article provides 15 ways in which anyone can get involved in helping stop police brutality. </p>
+  <li> <a href="https://www.aclu.org/fighting-police-abuse-community-action-manual"><u> Community Action Manual </u></a> </li>
+  <p>This site is a helpful manual for fighting police abuse. This cite is made by the American Civil Liberties Union. </p>
+  </ul>
+<h1> Videos </h1>
+  <ul style="list-style-type: none">
+  <p>This video is a testimony of how someone was able to use their "white privilege" in a beneficial way. </p>
+  <li> <iframe width="560" height="315" src="https://www.youtube.com/embed/Wf9QBnPK6Yg" frameborder="0" allowfullscreen></iframe> </li>
+  <p>This video is made by a bay area local. It explains how racism is still happening. This video is eye opening to the reality of racism. </p>
+  <li> <iframe width="560" height="315" src="https://www.youtube.com/embed/h_hx30zOi9I" frameborder="0" allowfullscreen></iframe> </li>
+
+   <ul>
+</body>
+</html>
